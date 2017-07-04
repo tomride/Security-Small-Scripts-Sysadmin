@@ -20,13 +20,9 @@ ultima_estable = datos['offers'][0]['current']
 
 def findingwp():
     for root, dirs, files in lstDir:
-        if "version.php" in files:
+        if "version.php" in files and "wp-includes" in root:
             all = root+"/version.php"
             lista.append(all)
-
-    for ruta in lista:
-        if "wp-includes" not in ruta:
-           lista.remove(ruta)
 
 def checkwp():
     for ruta in lista:
