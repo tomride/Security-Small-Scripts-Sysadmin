@@ -3,7 +3,7 @@
 import os
 import socket
 
-#SIMPLE SCRIPT TO KNOCK PORTS TO OPEN SSH server
+#SIMPLE SCRIPT TO KNOCK PORTS FOR OPEN SSH server
 
 
 ippaddress = raw_input("IP server to knock knock")
