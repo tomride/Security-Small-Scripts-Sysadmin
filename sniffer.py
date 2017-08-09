@@ -22,7 +22,6 @@ def PacketHandler2(pkt) :
 
 def PacketHandler3(pkt) :
     if pkt.haslayer(Dot11Deauth) :
-        #print pkt.sprinf("Deauth from AP [%Dot11.addr2%] Client [%Dot11.addr1%], Reason [%Dot11Deauth.reason%]")
         print "Deauth FROM AP: %s  Client %s Reason %s" %(pkt.addr2, pkt.addr1, pkt.reason)
 
 parser = argparse.ArgumentParser()
