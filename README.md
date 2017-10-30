@@ -1,2 +1,3 @@
-# learningpython
-Small and easy python scripts. Repository for educational purpose.
+# Security Small Script for fun and profit
+
+Repository for educational purpose.
