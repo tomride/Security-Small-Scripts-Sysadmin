@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Using IP Header TTL for search virtual Server on a Hardware Node (venet0)
+# Incomplete for adjust
 
 from scapy.all import *
 
