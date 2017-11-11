@@ -32,7 +32,6 @@ def main():
     	        query = '.'.join(reversed(str(i).split("."))) + "." + bl
                 answers = my_resolver.query(query, "A")
 	        answer_txt = my_resolver.query(query, "TXT")
-                print ("IP: %s IS listed in %s (%s: %s)" %(i, bl, answers[0], answer_txt[0]))
                 notification(i,bl,answers[0],answer_txt[0])
        	    except dns.resolver.NXDOMAIN:
                 print ("IP: %s is NOT listed in %s" %(i, bl))
@@ -47,9 +46,6 @@ def notification(i,bl,answer,atxt):
     server = smtplib.SMTP('server_ip_address',port)
     server.login("email","password")
     server.sendmail(sender, receivers, message)         
-    print "Successfully sent email"
-    print "Error: unable to send email"
-
 
 if __name__ == "__main__":
     main()
