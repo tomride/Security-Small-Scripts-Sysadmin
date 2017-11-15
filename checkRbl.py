@@ -42,10 +42,17 @@ def notification(i,bl,answer,atxt):
     receivers = "email"
     subject = "Server IP listed:%s" %i
     text = 'Server %s IS listed in %s (%s: %s)' %(i,bl,answer,atxt)
-    message = 'Subject: {}\n\n{}'.format(subject, text) 
+    message = string.join((
+	"From: %s" % sender,
+        "To: %s" % receivers,
+        "Subject: %s" % subject ,
+        "",
+        text
+        ), "\r\n")
     server = smtplib.SMTP('server_ip_address',port)
     server.login("email","password")
     server.sendmail(sender, receivers, message)         
+    server.quit()
 
 if __name__ == "__main__":
     main()
