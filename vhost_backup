@@ -1,0 +1,15 @@
+#!/bin/sh
+#Script to backup excluding directory.
+
+backupdir=/backups/
+#or destination folder
+
+mkdir $backupdir/$(date +%Y%m%d)
+# Creating Directory with backup date
+
+rsync -avz --exclude  'directory' /var/www/vhosts/ /backups/$(date +%Y%m%d) 
+# rsync all the file excluding dev directory
+
+delete=`date -d 'now - 5 day'  +%Y%m%d`
+rm -r $backupdir/$delete
+#Deleting old directory backup with old date (5 days)
