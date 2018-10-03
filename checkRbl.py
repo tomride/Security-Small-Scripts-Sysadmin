@@ -17,7 +17,7 @@ blist=[]
 
 bls = ["zen.spamhaus.org", "spam.abuse.ch", "cbl.abuseat.org", "virbl.dnsbl.bit.nl", "dnsbl.inps.de",
     "ix.dnsbl.manitu.net", "dnsbl.sorbs.net", "bl.spamcop.net",
-    "xbl.spamhaus.org", "pbl.spamhaus.org", "dnsbl-1.uceprotect.net", "dnsbl-2.uceprotect.net",
+    "xbl.spamhaus.org", "pbl.spamhaus.org", "dnsbl-1.uceprotect.net", "psbl.surriel.com", "dnsbl-2.uceprotect.net",
     "dnsbl-3.uceprotect.net", "db.wpbl.info", "all.s5h.net","bogons.cymru.com","combined.abuse.ch",
     "dnsbl.spfbl.net", "dnsbl.cyberlogic.net", "duinv.aupads.org","dynip.rothen.com"]
 
